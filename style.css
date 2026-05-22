@@ -73,3 +73,53 @@ footer {
     text-align: center;
     padding: 10px;
 }
+
+body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #1a1a1a;
+            padding: 0;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 30px;
+            width: 300px;
+        }
+        h2{
+            text-align: center;
+            color: #4CAF50;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+        input{
+            margin-bottom: 15px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #1eeb24;
+        }
+        button {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            border: 5px solid #4CAF50;
+            font-weight: 600;
+        }
+        button:hover{
+            background-color: #02fd0a;
+            border: 5px solid #02fd0a;
+        }
+        p{
+            font-size: 12px;
+        }
+        a{
+            color: #4CAF50;
+        }

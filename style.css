@@ -1,125 +1,122 @@
 :root {
-    --primary-color: #4CAF50;
-    --dark-bg: #333;
-    --light-bg: #f4f4f4;
-    --text-color: #333;
-    --white: #ffffff;
-    --nav-height: 50px;
-    --transition: all 0.3s ease;
+  --primary-color: #4caf50;
+  --dark-bg: #333;
+  --light-bg: #f4f4f4;
+  --text-color: #333;
+  --white: #ffffff;
+  --nav-height: 50px;
+  --transition: all 0.3s ease;
+  --button-hover: #039608;
 }
 
 * {
-    box-sizing: border-box;
-    margin: 0;
+  box-sizing: border-box;
+  margin: 0;
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: var(--text-color);
-    line-height: 1.6;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--text-color);
+  line-height: 1.6;
 }
 
 .navbar{
-    background-color: var(--dark-bg);
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: var(--nav-height);
-    z-index: 1000;
+  padding: 10px;
+  background-color: var(--dark-bg);
 }
 
-.navbar a {
-    display: flex;
-    align-items: center;
-    color: var(--white);
-    padding: 0 20px;
-    height: 100%;
-    text-decoration: none;
-    transition: var(--transition);
+.navbar ul{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
 }
 
-.navbar a:hover {
-    background-color: #ddd;
-    color: var(--dark-bg);
+.navbar li{
+  display: inline;
 }
 
-.navbar .active {
-    background-color: var(--primary-color);
-    color: var(--white);
+.navbar img{
+  width: 50px;
+  border-radius: 25px;
 }
 
-.nav-links {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    display: flex;
-    height: 100%;
+.navbar a{ 
+  text-decoration: none;
+  margin: 5px;
+  color: var(--white);
+  padding: 5px 15px;
 }
 
-.nav-links li {
-    height: 100%;
+.navbar .active{
+ background-color: var(--primary-color);
+  color: var(--white);
 }
 
-main{
-    padding-top: var(--nav-height);
-    background-color: var(--light-bg);
-    min-height: 100vh;
-    box-sizing: border-box;
+main {
+  padding-top: var(--nav-height);
+  background-color: var(--light-bg);
+  min-height: 100vh;
+  box-sizing: border-box;
 }
 
 footer {
-    background-color: var(--dark-bg);
-    color: var(--white);
-    text-align: center;
-    padding: 10px;
+  background-color: var(--dark-bg);
+  color: var(--white);
+  text-align: center;
+  padding: 10px;
 }
 
-body {
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: #1a1a1a;
-            padding: 0;
-            margin: 0;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .card {
-            background-color: #fff;
-            border-radius: 8px;
-            padding: 30px;
-            width: 300px;
-        }
-        h2{
-            text-align: center;
-            color: #4CAF50;
-        }
-        form{
-            display: flex;
-            flex-direction: column;
-            gap: 5px;
-        }
-        input{
-            margin-bottom: 15px;
-            padding: 10px;
-            border-radius: 5px;
-            border: 1px solid #1eeb24;
-        }
-        button {
-            background-color: #4CAF50;
-            color: #fff;
-            padding: 10px;
-            border-radius: 5px;
-            border: 5px solid #4CAF50;
-            font-weight: 600;
-        }
-        button:hover{
-            background-color: #02fd0a;
-            border: 5px solid #02fd0a;
-        }
-        p{
-            font-size: 12px;
-        }
-        a{
-            color: #4CAF50;
-        }
+.login-register {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #1a1a1a;
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login-register-card {
+  background-color: var(--white);
+  border-radius: 8px;
+  padding: 30px;
+  width: 400px;
+}
+
+h2 {
+  text-align: center;
+  color: var(--primary-color);
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+input {
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #1eeb24;
+}
+button {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 10px; 
+  border-radius: 5px;
+  border: 5px solid var(--primary-color);
+  font-weight: 600;
+}
+button:hover {
+  background-color: var(--button-hover);
+  border: 5px solid var(--button-hover);
+}
+.login-register-card p {
+  font-size: 12px;
+}
+.login-register-card a {
+  color: var(--primary-color);
+}

@@ -29,7 +29,7 @@
     width: 220px;
     height: calc(100vh - 50px); /* Fill screen height minus top navbar */
     position: sticky;
-    top: 50px; /* Align with top navbar */
+    top: 0px; /* Align with top navbar */
     left: 0;
     padding-top: 20px;
     overflow-y: auto;

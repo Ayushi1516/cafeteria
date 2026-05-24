@@ -1,67 +1,138 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="dashboard.css" />
     <script src="script.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav class="navbar">
-            <ul class="nav-links">
-                <li><img src="./images/icon.png" alt="cafeteria"></li>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="dashboard.html">Dashboard</a></li>
-            </ul>
-        </nav>
+      <nav class="navbar">
+        <ul>
+          <li><img src="./images/icon.png" alt="cafeteria" /></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="login.html" class="login-btn">Login</a></li>
+          <li><a href="register.html" class="sign-up">SignUp</a></li>
+        </ul>
+      </nav>
     </header>
     <main class="dashboard-wrapper">
-        <aside class="side-navbar">
-            <ul class="side-nav-links">
-                <li><a href="#menu">Menu</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#profile">Profile</a></li>
-                <li><a href="index.html">Logout</a></li>
-            </ul>
-        </aside>
-            <section id="menu">
-                <div class="content-area">
-                    <h1>Cafeteria Menu</h1>
-                    <div class="card-grid">
-                        <div class="card">
-                            <h3>Breakfast</h3>
-                            <p>Healthy starts with oats, fruits, and fresh juices.</p>
-                        </div>
-                        <div class="card">
-                            <h3>Lunch</h3>
-                            <p>Hearty meals including pasta, salads, and soups.</p>
-                        </div>
-                        <div class="card">
-                            <h3>Dinner</h3>
-                            <p>Chef specials and grilled favorites to end your day.</p>
-                        </div>
-                        <div class="card">
-                            <h3>Beverages</h3>
-                            <p>A selection of hot coffees and chilled refreshments.</p>
-                        </div>
-                    </div>
+      <aside class="side-navbar">
+        <ul class="side-nav-links">
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#profile">Profile</a></li>
+          <li><a href="index.html">Logout</a></li>
+        </ul>
+      </aside>
+      <section id="menu">
+        <div class="content-area">
+          <h1>Cafeteria Menu</h1>
+          <div class="menu-card">
+            <div class="card">
+              <h3>Breakfast</h3>
+              <p>Healthy starts with oats, fruits, and fresh juices.</p>
+            </div>
+            <div class="card">
+              <h3>Lunch</h3>
+              <p>Hearty meals including pasta, salads, and soups.</p>
+            </div>
+            <div class="card">
+              <h3>Dinner</h3>
+              <p>Chef specials and grilled favorites to end your day.</p>
+            </div>
+            <div class="card">
+              <h3>Beverages</h3>
+              <p>A selection of hot coffees and chilled refreshments.</p>
+            </div>
+          </div>
+          <section id="BreakFast">
+            <div class="food">
+              <h2>Breakfast Items</h2>
+              <div class="food-items">
+                <div>
+                  <img src="images/samosa.png" alt="samosa" />
+                  <h4>Samosa</h4>
+                  <button type="submit">Add to cart</button>
+                  <div class="quantity"><a>-</a>0<a>+</a></div>
                 </div>
-            </section>
-            <section id="about">
-                <div class="content-area">
-                <h1>About</h1>
-                <p>Content for the about section goes here...</p>
+                <div>
+                  <img src="images/poha.png" alt="poha" />
+                  <h4>Poha</h4>
+                  <button type="submit">Add to cart</button>
+                  <div class="quantity"><a>-</a>0<a>+</a></div>
                 </div>
-            </section>
-            <section id="profile">
-                <div class="content-area">
-                <h1>Profile</h1>
-                <p>User profile and settings go here...</p>
+                <div>
+                  <img src="images/idli-sambar.png" alt="idli-sambar" />
+                  <h4>Idli Sambar</h4>
+                  <button type="submit">Add to cart</button>
+                  <div class="quantity"><a>-</a>0<a>+</a></div>
                 </div>
-            </section>
+                <div>
+                  <img src="images/fruit-plate.png" alt="fruit-plate" />
+                  <h4>Fruit Plate</h4>
+                  <button type="submit">Add to cart</button>
+                  <div class="quantity"><a>-</a>0<a>+</a></div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="Beverages">
+            <div class="food">
+              <h2>Beverages Items</h2>
+              <div class="food-items">
+                <div>
+                  <img src="images/coffee.png" alt="coffee" />
+                  <h4>Coffee</h4>
+                  <button type="submit">Add to cart</button>
+                  <div class="quantity"><a>-</a>0<a>+</a></div>
+                </div>
+                <div>
+                  <img src="images/dark-coffee.png" alt="dark-coffee" />
+                  <h4>Dark Coffee</h4>
+                  <button type="submit">Add to cart</button>
+                  <div class="quantity"><a>-</a>0<a>+</a></div>
+                </div>
+                <div>
+                  <img src="images/spanish-coffee.png" alt="spanish-coffee" />
+                  <h4>Spanish coffee</h4>
+                  <button type="submit">Add to cart</button>
+                  <div class="quantity"><a>-</a>0<a>+</a></div>
+                </div>
+                <div>
+                  <img src="images/vanilla-shake.png" alt="vanilla-shake" />
+                  <h4>Vanilla Shake</h4>
+                  <button type="submit">Add to cart</button>
+                  <div class="quantity"><a>-</a>0<a>+</a></div>
+                </div>
+                <div>
+                  <img src="images/strwaberry-shake.png" alt="straberry-shake" />
+                  <h4>Strawberry Shake</h4>
+                  <button type="submit">Add to cart</button>
+                  <div class="quantity"><a>-</a>0<a>+</a></div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+      <section id="about">
+        <div class="content-area">
+          <h1>About</h1>
+          <p>Content for the about section goes here...</p>
+        </div>
+      </section>
+      <section id="profile">
+        <div class="content-area">
+          <h1>Profile</h1>
+          <p>User profile and settings go here...</p>
+        </div>
+      </section>
     </main>
-</body>
+  </body>
 </html>

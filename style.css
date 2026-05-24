@@ -23,6 +23,7 @@ body {
 .navbar{
   padding: 10px;
   background-color: var(--dark-bg);
+  box-shadow: 0px 0px 3px 0px rgb(255, 227, 227);
 }
 
 .navbar ul{
@@ -39,8 +40,12 @@ body {
   display: inline;
 }
 
+.navbar li:nth-child(4) {
+  margin-left: auto;
+}
+
 .navbar img{
-  width: 50px;
+  width: 40px;
   border-radius: 25px;
 }
 
@@ -48,7 +53,7 @@ body {
   text-decoration: none;
   margin: 5px;
   color: var(--white);
-  padding: 5px 15px;
+  padding: 8px 15px;
 }
 
 .navbar .active{
@@ -56,11 +61,37 @@ body {
   color: var(--white);
 }
 
+.navbar .login-btn{
+  border: 1px solid var(--primary-color); 
+  border-radius: 5px;
+}
+
+.navbar .sign-up{
+  background-color: var(--primary-color);
+  border-radius: 5px;
+}
+
+
 main {
   padding-top: var(--nav-height);
   background-color: var(--light-bg);
   min-height: 100vh;
   box-sizing: border-box;
+}
+
+.home-page{
+  text-align: center;
+  margin: 10px;
+  
+}
+
+.home-page .container {
+  background-image: url("images/bg.png");
+  background-size: cover;
+  background-position: center;
+  min-height: 400px;
+  width: 100%;
+  margin-top: 20px;
 }
 
 footer {
@@ -72,7 +103,7 @@ footer {
 
 .login-register {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #1a1a1a;
+  background: linear-gradient(135deg, rgba(0, 255, 0, 0.336), rgb(4, 83, 4));
   padding: 0;
   margin: 0;
   height: 100vh;
@@ -85,9 +116,18 @@ footer {
   border-radius: 8px;
   padding: 30px;
   width: 400px;
+  box-shadow: 0px 0px 2px 2px rgba(0, 128, 0, 0);
 }
 
-h2 {
+.login-register-heading {
+    display: flex;
+    justify-content: center;
+}
+.login-register-heading img{
+  width: 40px;
+  height: 40px;
+}
+.login-register-heading h2 {
   text-align: center;
   color: var(--primary-color);
 }
@@ -102,7 +142,7 @@ input {
   border-radius: 5px;
   border: 1px solid #1eeb24;
 }
-button {
+form button {
   background-color: var(--primary-color);
   color: #fff;
   padding: 10px; 
@@ -110,7 +150,7 @@ button {
   border: 5px solid var(--primary-color);
   font-weight: 600;
 }
-button:hover {
+form button:hover {
   background-color: var(--button-hover);
   border: 5px solid var(--button-hover);
 }

@@ -27,10 +27,11 @@ body {
 }
 
 .navbar ul{
-  margin: 0;
+  margin: 0px 10px;
   padding: 0;
   list-style-type: none;
   display: flex;
+  flex-wrap: wrap; /* Allows items to wrap to a new line on small screens */
   justify-content: flex-start;
   align-items: center;
   gap: 20px;
@@ -159,4 +160,54 @@ form button:hover {
 }
 .login-register-card a {
   color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+    .dashboard-wrapper {
+        flex-direction: column; /* Stacks sidebar on top of main content */
+    }
+
+    .navbar ul{
+        justify-content: center;
+        gap: 10px; /* Reduce gap for tighter screens */
+    }
+
+    .navbar li:nth-child(4) {
+        margin-left: 0; /* Reset the push-to-right behavior for mobile centering */
+    }
+
+    .side-navbar {
+        min-width: 100%;
+        height: auto;
+        position: relative; /* Removes the sticky 100vh behavior */
+        padding-top: 0;
+    }
+
+    .side-navbar ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .side-navbar a {
+        padding: 12px 15px;
+        border-bottom: none;
+        border-right: 1px solid #34495e;
+        text-align: center;
+        flex: 1; /* Makes links grow equally */
+    }
+
+    .side-navbar a.active {
+        border-left: none;
+        border-bottom: 4px solid #4CAF50; /* Moves indicator from left to bottom */
+        padding-left: 15px; 
+    }
+
+    .dashboard-wrapper > section {
+        padding-top: 20px; /* Reduces spacing since sidebar is no longer occupying full height */
+    }
+
+    .food-items {
+        gap: 20px; /* Closes the 100px gap for mobile screens */
+    }
 }

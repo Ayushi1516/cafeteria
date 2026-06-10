@@ -162,6 +162,18 @@ form button:hover {
   color: var(--primary-color);
 }
 
+.error{
+  color: red;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+}
+
+.success{
+  color: #039608;
+  
+}
+
 @media (max-width: 768px) {
     .dashboard-wrapper {
         flex-direction: column; /* Stacks sidebar on top of main content */

@@ -1,0 +1,25 @@
+{
+  "breakfast": [
+    { "id": 1, "name": "Samosa", "image": "images/samosa.png", "alt": "Samosa", "price": 15 },
+    { "id": 2, "name": "Poha", "image": "images/poha.png", "alt": "Poha", "price": 30 },
+    { "id": 3, "name": "Idli Sambar", "image": "images/idli-sambar.png", "alt": "Idli Sambar", "price": 40 },
+    { "id": 4, "name": "Fruit Plate", "image": "images/fruit-plate.png", "alt": "Fruit Plate", "price": 50 }
+  ],
+  "lunch": [
+    { "id": 5, "name": "Pasta", "image": "images/pasta.png", "alt": "Pasta", "price": 120 },
+    { "id": 6, "name": "Garden Salad", "image": "images/salad.png", "alt": "Garden Salad", "price": 80 },
+    { "id": 7, "name": "Tomato Soup", "image": "images/soup.png", "alt": "Tomato Soup", "price": 60 }
+  ],
+  "dinner": [
+    { "id": 8, "name": "Palak Paneer", "image": "images/palak-paneer.png", "alt": "Palak Paneer", "price": 200 },
+    { "id": 9, "name": "Paneer Butter Masala", "image": "images/paneer.png", "alt": "Paneer Butter Masala", "price": 180 },
+    { "id": 10, "name": "Dal Makhani", "image": "images/dal-makhani.png", "alt": "Dal Makhani", "price": 150 }
+  ],
+  "beverages": [
+    { "id": 11, "name": "Coffee", "image": "images/coffee.png", "alt": "Coffee", "price": 25 },
+    { "id": 12, "name": "Dark Coffee", "image": "images/dark-coffee.png", "alt": "Dark Coffee", "price": 30 },
+    { "id": 13, "name": "Spanish coffee", "image": "images/spanish-coffee.png", "alt": "Spanish coffee", "price": 45 },
+    { "id": 14, "name": "Vanilla Shake", "image": "images/vanilla-shake.png", "alt": "Vanilla Shake", "price": 70 },
+    { "id": 15, "name": "Strawberry Shake", "image": "images/strwaberry-shake.png", "alt": "Strawberry Shake", "price": 75 }
+  ]
+}
